@@ -8,7 +8,8 @@ def emotion_detector(text_to_analyse):
 
     STATUS_CODE = response.status_code
 
-    if STATUS_CODE == 400:
+    
+    if STATUS_CODE is 400:
         return {
         'anger' : None,
         'disgust' : None,
